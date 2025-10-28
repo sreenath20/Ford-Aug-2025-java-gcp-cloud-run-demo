@@ -9,4 +9,8 @@ public class DemoController {
     public String info() {
         return "Hello from my VM";
     }
+    @GetMapping("/about")
+    public String about() {
+        return "Cloud Run demo !";
+    }
 }
