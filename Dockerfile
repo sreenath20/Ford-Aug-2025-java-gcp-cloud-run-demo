@@ -21,7 +21,7 @@ FROM eclipse-temurin:21-jdk-jammy
 COPY --from=builder /app/build/libs/demo-0.0.1-SNAPSHOT.jar /app/app.jar
 
 # Expose application port (optional, e.g., 8080)
-EXPOSE 8080
+EXPOSE 8090
 
 # Run the JAR
 ENTRYPOINT ["java", "-jar", "/app/app.jar"]
